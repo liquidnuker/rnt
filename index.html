@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="main.bundle.css">
+    <link rel="icon" type="image/png" href="icon.png">
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    
+    <!-- 1a -->
+    <!-- Base 64 transparent gif -->
+    <!-- <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="https://lorempixel.com/400/200/" /> -->
+
+    <!-- 1b -->
+    <!-- <img src="src/img/ui/loading.gif" data-src="https://lorempixel.com/400/200/" /> -->
+    <br><br>
+
+    <!-- 2. echo.js-->
+    <!-- <img src="src/img/ui/loading.gif" alt="Photo" data-echo="https://lorempixel.com/400/200/"> -->
+
+    <!-- 3. bLazy.js -->
+    <!-- <img class="b-lazy" 
+         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+         data-src="https://lorempixel.com/400/200/"
+         alt="alt-text-bLazy"
+    /> -->
+
+    <img class="b-lazy" 
+         src="src/img/ui/loading.gif"
+         data-src="https://lorempixel.com/400/200/"
+         alt="alt-text-bLazy"
+    />
+
+    <!-- 1 -->
+    <!-- <script>
+      window.addEventListener('load', function(){
+        let allimages= document.getElementsByTagName('img');
+        console.log("img loaded");
+        for (let i = 0, l = allimages.length; i < l; i++) {
+          if (allimages[i].getAttribute('data-src')) {
+            allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+          }
+        }
+      }, false)
+    </script> -->
+
+  <!-- 2 -->
+  <!-- <script src="src/js/vendor/echo.min.js"></script>
+  <script>
+  echo.init({
+    offset: 100,
+    throttle: 250,
+    unload: false,
+    callback: function (element, op) {
+      if(op === 'load') {
+        console.log(op);
+        // element.classList.add('loaded');
+      } else {
+        console.log(op);
+        // element.classList.remove('loaded');
+      }
+    }
+  });
+
+  // echo.render(); is also available for non-scroll callbacks
+  </script> -->
+
+    <script src="dist/main.bundle.js"></script>
+  </body>
+</html>

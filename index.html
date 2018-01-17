@@ -21,11 +21,12 @@
     <!-- <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="https://lorempixel.com/400/200/" /> -->
 
     <!-- 1b -->
-    <!-- <img src="src/img/ui/loading.gif" data-src="https://lorempixel.com/400/200/" /> -->
+    <img src="src/img/ui/loading.gif" data-src="https://lorempixel.com/400/200/" />
     <br><br>
 
     <!-- 2. echo.js-->
-    <!-- <img src="src/img/ui/loading.gif" alt="Photo" data-echo="https://lorempixel.com/400/200/"> -->
+    <img src="src/img/ui/loading.gif" alt="Photo" data-echo="https://lorempixel.com/400/200/">
+    <br><br>
 
     <!-- 3a. bLazy.js -->
     <!-- <img class="b-lazy" 
@@ -33,47 +34,15 @@
          data-src="https://lorempixel.com/400/200/"
          alt="alt-text-bLazy"
     /> -->
+    
 
     <!-- 3b. bLazy.js preloader gif-->
-    <!-- <img class="b-lazy" 
+    <img class="b-lazy" 
          src="src/img/ui/loading.gif"
          data-src="https://lorempixel.com/400/200/"
          alt="alt-text-bLazy"
-    /> -->
-
-    <!-- 1 -->
-    <!-- <script>
-      window.addEventListener('load', function(){
-        let allimages= document.getElementsByTagName('img');
-        console.log("img loaded");
-        for (let i = 0, l = allimages.length; i < l; i++) {
-          if (allimages[i].getAttribute('data-src')) {
-            allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
-          }
-        }
-      }, false)
-    </script> -->
-
-  <!-- 2 -->
-  <!-- <script src="src/js/vendor/echo.min.js"></script>
-  <script>
-  echo.init({
-    offset: 100,
-    throttle: 250,
-    unload: false,
-    callback: function (element, op) {
-      if(op === 'load') {
-        console.log(op);
-        // element.classList.add('loaded');
-      } else {
-        console.log(op);
-        // element.classList.remove('loaded');
-      }
-    }
-  });
-
-  // echo.render(); is also available for non-scroll callbacks
-  </script> -->
+    />
+    <br><br>
 
     <script src="dist/main.bundle.js"></script>
   </body>

@@ -1,5 +1,9 @@
 // import "./styles/main.scss";
-import Blazy from "./js/vendor/bLazy.min.js";
+
+// 
+// ======================================================/
+// import Blazy from "./js/vendor/bLazy.min.js"; // ok
+import Blazy from "blazy"; // ok
 
 let bLazy = new Blazy({
   success: function (ele) {
